@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+.container {
+    width: 100%;
+}
+
+/* Thiết lập header */
+header {
+    background-color: #000;
+    padding: 10px;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header img {
+    width: 100px;
+}
+nav.menu {
+    float: right;
+    margin-right: 50px; /* Điều chỉnh khoảng cách giữa menu và logo */
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 15px;
+}
+
+nav.menu ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav.menu ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav.menu ul ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    border-radius: 10px;
+    width: 120px;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+nav.menu ul ul a{
+    display: block;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+nav.menu ul li a:hover {
+    background-color: #444;
+    border-radius: 10px;
+}
+nav.menu ul ul a:hover{
+    color: red;
+}
+/* Thiết lập cho phần bài viết */
+article {
+    margin-top: 70px;
+}
+.about-t1 {
+    background-color: #333;
+    padding: 60px;
+    text-align: left;
+}
+
+.about-t1 h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+.about-t1 h3 {
+    font-family: Bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.about-t1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* Leadership Section */
+.leadership {
+    background-color: #333;
+    padding: 20px;
+}
+
+.leadership h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.leadership-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leadership-info img.ceo-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ceo-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.ceo-details p {
+    font-size: 1rem;
+    color: #ccc;
+}
+.team-section h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h2 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.team-member p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cột trên màn hình nhỏ */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 cột trên màn hình rất nhỏ */
+    }
+}
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 50px;
+    color: white;
+}
+
+/* Văn bản ở bên trái */
+.left-text a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Văn bản ở bên phải */
+.right-text a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hiệu ứng hover cho cả 2 văn bản */
+.left-text a:hover, .right-text a:hover {
+    color: red;
+}
+/* Thiết lập cho footer */
+/* Phần màu đỏ chứa các logo đối tác */
+.footer-red {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.partner-logos img {
+    margin: 5px;
+    width: 70px;
+    height: auto;
+}
+.footer-black {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a,
+.legal-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-links a:hover,
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Dòng bản quyền */
+.copyright p {
+    margin-top: 20px;
+    font-size: 12px;
+}

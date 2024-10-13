@@ -1,0 +1,244 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    width: 100%;
+}
+
+/* Thiết lập header */
+header {
+    background-color: #000;
+    padding: 10px;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header img {
+    width: 100px;
+}
+nav.menu {
+    float: right;
+    margin-right: 50px; /* Điều chỉnh khoảng cách giữa menu và logo */
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 15px;
+}
+
+nav.menu ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav.menu ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav.menu ul ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    border-radius: 10px;
+    width: 120px;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+nav.menu ul ul a{
+    display: block;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+nav.menu ul li a:hover {
+    background-color: #444;
+    border-radius: 10px;
+}
+nav.menu ul ul a:hover{
+    color: red;
+}
+
+
+
+/* Thiết lập cho phần bài viết */
+article {
+    margin-top: 70px;
+}
+
+.pic {
+    width: 100%;
+    position: relative;
+}
+
+.pic img {
+    width: 100%; 
+    border: #000;
+    height: auto;  
+    display: block;
+}
+.t1-collection {
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.t1-collection h1 {
+    font-size: 32px;
+    color: red; /* Màu đỏ cho tiêu đề */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-family: Arial;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-item {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.buy-now-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Bỏ gạch chân cho link */
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: darkred;
+}
+.t1-team{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 10;
+}
+.t1-team h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.team-images {
+    display: flex; /* Đặt thành flexbox để xếp ảnh trên cùng một dòng */
+    justify-content: space-between; /* Chia đều khoảng cách giữa các ảnh */
+    gap: 10px;  /* Khoảng cách giữa các ảnh */
+    list-style: none; /* Loại bỏ dấu đầu dòng của các phần tử li */
+    padding: 0;
+}
+
+.team-images li {
+    flex: 1; /* Đảm bảo các ảnh có kích thước đều nhau */
+}
+
+.team-images img {
+    width: 100%;  /* Đảm bảo ảnh chiếm toàn bộ không gian của khung cha */
+    max-width: 250px; /* Giới hạn chiều rộng tối đa của ảnh */
+    height: auto;
+    border-radius: 10px;  /* Bo góc cho ảnh */
+}
+/* Thiết lập cho footer */
+/* Phần màu đỏ chứa các logo đối tác */
+.footer-red {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.partner-logos img {
+    margin: 5px;
+    width: 70px;
+    height: auto;
+}
+.youtube-videos {
+    margin: 20px 10; /* Khoảng cách giữa tiêu đề và video */
+    background-color: rgb(53, 49, 49);
+    padding: 20px;
+}
+.youtube-videos h1{
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left:280px ;
+   
+}
+.video-row {
+    display: flex;
+    justify-content: center; /* Căn giữa các video trong hàng */
+    margin: 20px 0; /* Khoảng cách giữa các hàng video */
+}
+
+.video {
+    margin: 0 10px; /* Khoảng cách giữa các video */
+}
+
+.video iframe {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của ô */
+    max-width: 320px; /* Giới hạn chiều rộng tối đa */
+    height: 200px;
+}
+.footer-black {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a,
+.legal-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-links a:hover,
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Dòng bản quyền */
+.copyright p {
+    margin-top: 20px;
+    font-size: 12px;
+}
